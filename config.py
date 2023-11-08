@@ -36,7 +36,7 @@ class Config(object):
  
     # other configs
     BOT_UPTIME  = time.time()
-    START_PIC   = os.environ.get("START_PIC", "https://telegram.me/share/url?url=https://graph.org/file/cf681645dae76b0c87c66.jpg")
+    START_PIC   = os.environ.get("START_PIC", "https://graph.org/file/cf681645dae76b0c87c66.jpg")
     ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '6646028262').split()]
     FORCE_SUB   = os.environ.get("FORCE_SUB", "t.me/Deendayal_dhakad") 
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002132978168"))
